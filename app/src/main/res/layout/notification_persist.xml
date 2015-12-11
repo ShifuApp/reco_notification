@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <ImageView
+        android:id="@+id/notificationPersistIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/notification_bar_icon_21" />
+
+    <TextView
+        android:id="@+id/notificationPersistHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/notificationPersistAddReminder"
+        android:layout_toRightOf="@id/notificationPersistIcon"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/notificationPersistAddReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/notificationPersistSettings"
+        android:background="@drawable/statusbar_button_drawable"
+        android:src="@drawable/notification_bar_add_21" />
+
+    <ImageButton
+        android:id="@+id/notificationPersistSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/statusbar_button_drawable"
+        android:src="@drawable/notification_bar_settings_21" />
+
+</RelativeLayout>

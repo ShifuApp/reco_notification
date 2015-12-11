@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp" >
+
+    <RelativeLayout
+        android:id="@+id/notificationSuggestRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/notificationSuggestTopRelativeLayout" >
+
+        <RelativeLayout
+            android:id="@+id/notificationSuggestOneRelativeLayout"
+            style="@style/notificationSuggestRelativeLayout"
+            android:layout_toLeftOf="@+id/notificationSuggestSecondRelativeLayout" >
+
+            <ImageView
+                android:id="@+id/notificationSuggestOneImageButton"
+                style="@style/notificationSuggestImageButton" />
+
+            <TextView
+                android:id="@+id/notificationSuggestOneTextView"
+                style="@style/notificationSuggestTextView"
+                android:layout_alignLeft="@+id/notificationSuggestOneImageButton"
+                android:layout_alignRight="@+id/notificationSuggestOneImageButton"
+                android:layout_below="@+id/notificationSuggestOneImageButton"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/notificationSuggestOneSubImageButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/notificationSuggestOneImageButton"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/notification_bar_icon_21" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notificationSuggestSecondRelativeLayout"
+            style="@style/notificationSuggestRelativeLayout"
+            android:layout_toLeftOf="@+id/notificationSuggestThirdRelativeLayout" >
+
+            <ImageView
+                android:id="@+id/notificationSuggestSecondImageButton"
+                style="@style/notificationSuggestImageButton"
+                android:layout_toLeftOf="@+id/notificationSuggestThirdImageButton" />
+
+            <TextView
+                android:id="@+id/notificationSuggestSecondTextView"
+                style="@style/notificationSuggestTextView"
+                android:layout_alignLeft="@+id/notificationSuggestSecondImageButton"
+                android:layout_alignRight="@+id/notificationSuggestSecondImageButton"
+                android:layout_below="@+id/notificationSuggestSecondImageButton"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/notificationSuggestSecondSubImageButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/notificationSuggestSecondImageButton"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/notification_bar_icon_21" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notificationSuggestThirdRelativeLayout"
+            style="@style/notificationSuggestRelativeLayout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/notificationSuggestSecondImageButton" >
+
+            <ImageView
+                android:id="@+id/notificationSuggestThirdImageButton"
+                style="@style/notificationSuggestImageButton" />
+
+            <TextView
+                android:id="@+id/notificationSuggestThirdTextView"
+                style="@style/notificationSuggestTextView"
+                android:layout_alignLeft="@+id/notificationSuggestThirdImageButton"
+                android:layout_alignRight="@+id/notificationSuggestThirdImageButton"
+                android:layout_below="@+id/notificationSuggestThirdImageButton"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/notificationSuggestThirdSubImageButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/notificationSuggestThirdImageButton"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/notification_bar_icon_21" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/notificationSuggestTopRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/notificationPersistIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/notification_bar_icon_21" />
+
+        <TextView
+            android:id="@+id/notificationPersistHeading"
+            style="@style/persitNotificationHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/notificationPersistAddReminder"
+            android:layout_toRightOf="@id/notificationPersistIcon"
+            android:text="@string/reco" />
+
+        <ImageButton
+            android:id="@+id/notificationPersistAddReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/notificationPersistSettings"
+            android:background="@drawable/statusbar_button_drawable"
+            android:src="@drawable/notification_bar_add_21" />
+
+        <ImageButton
+            android:id="@+id/notificationPersistSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/statusbar_button_drawable"
+            android:src="@drawable/notification_bar_settings_21" />
+    </RelativeLayout>
+
+</RelativeLayout>
